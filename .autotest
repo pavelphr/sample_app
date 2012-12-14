@@ -1,0 +1,16 @@
+require 'autotest/growl'
+
+# Don’t Clear the Terminal:
+# Add the following to your ~/.autotest 
+#  if you don’t want the terminal to be cleared 
+#  before running a test:
+
+# Autotest::Growl::clear_terminal = false
+
+# Hide the Label:
+# If you prefer the Growl notifications not to show
+#  labels such as “LABEL: All tests have passed”, 
+#  dd the following to your ~/.autotest:
+
+# Autotest::Growl::hide_label = true
+
