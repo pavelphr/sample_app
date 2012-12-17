@@ -14,3 +14,11 @@ require 'autotest/growl'
 
 # Autotest::Growl::hide_label = true
 
+
+# the spec\integration\layout_links_spec.rb SHOULD tested also:
+Autotest.add_hook :initialize do |autotest|
+	autotest.add_mapping(%r%^spec/(requests)/.*rb$%) do |filename, _|
+		filename
+	end
+end
+
