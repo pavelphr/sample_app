@@ -1,4 +1,9 @@
 SampleApp::Application.routes.draw do
+  get "adverts/adnew"
+  get "adverts/choose"
+  get "adverts/play"
+  get "adverts/win"
+
   get "users/new"
 
 #  get "pages/home"
@@ -10,6 +15,11 @@ SampleApp::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
   match '/signup',  :to => 'users#new'
+
+  match '/adnew',   :to => 'adverts#adnew'
+  match '/choose',  :to => 'adverts#choose'
+  match '/play',    :to => 'adverts#play'
+  match '/win',     :to => 'adverts#win'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
